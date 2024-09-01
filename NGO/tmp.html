@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Problem | E-Sahayak</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+</head>
+<body>
+    
+    <h1 id='probid'class="flex justify-center p-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Problem ID: XXXX</h1>
+    <section class="p-8">
+    <h3 class="text-3xl font-bold dark:text-white pt-2 pb-2">Problem</h3>
+    <h6 id='problem' class="text-lg dark:text-white">problem statement</h6>
+    <h3 class="text-3xl font-bold dark:text-white pt-2 pb-2">Category</h3>
+    <h6 id='category' class="text-lg dark:text-white">Problem Category</h6>
+    <h3 class="text-3xl font-bold dark:text-white pt-2 pb-2">Decription</h3>
+    <h6 id='message' class="text-lg dark:text-white">Problem Dexcription</h6>
+    
+    <h3 class="text-3xl font-bold dark:text-white pt-4">Problem Media</h3>
+
+    <div class="flex justify-between p-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="problemImages/images.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="problemImages/imddddages.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="problemImages/Untitled.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="problemImages/Ussddsntitled.jpg" alt="">
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+
+    <p class="flex justify-center font-extrabold text-6xl text-gray-900 dark:text-white p-8">Ticket Tracking</p>
+    <table>
+        <!-- Create 11 rows -->
+        <!-- Row 1 (Header) -->
+        <tr>
+            <th>NGO Name</th>
+            <th>STATUS</th>
+            <th>Remarks</th>
+        </tr>
+        <!-- Rows 2 to 11 -->
+        <tr>
+            <td>ISHA Foundation</td>
+            <td>Inactive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>SMILES</td>
+            <td>Pending</td>
+            <td>Insufficient site labour</td>
+        </tr>
+        <tr>
+            <td>Give INDIA</td>
+            <td>Inactive</td>
+            <td>Supports various social causes through donations.</td>
+        </tr>
+        <tr>
+            <td>Oxfam India</td>
+            <td>Inactive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CRY (Child Rights and You)</td>
+            <td>Inactive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Akshaya Patra</td>
+            <td id="green" class="">Inactive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HelpAge India</td>
+            <td>Inactive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Care India</td>
+            <td>Pending</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Pratham</td>
+            <td>Inactive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Smile Foundation</td>
+            <td>Inactive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Goonj</td>
+            <td>Pending</td>
+            <td>Focuses on urban-rural waste management and disaster relief.</td>
+        </tr>
+    </table>
+    
+    <div class="mb-6 pt-8">
+        <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Remarks</label>
+        <input type="text" id="default-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    </div>
+
+    <div class="flex justify-center p-8">
+        <button type="button" id='a' onclick="accept()" class="p-8 text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Accept</button>
+        <button type="button" id='b' onclick="collaborate()"class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Collaborate</button>
+        <button type="button" id='c' onclick="reject()"class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Decline</button>
+    </div>
+
+    </section>
+
+</body>
+<script>
+    document.getElementById('probid').innerHTML='Problem ID : '+localStorage.getItem('PID');
+    document.getElementById('problem').innerHTML=localStorage.getItem('problem');
+    document.getElementById('category').innerHTML=localStorage.getItem('category');
+    document.getElementById('message').innerHTML=localStorage.getItem('message');
+    function accept(){
+        document.getElementById('a').innerHTML='Accepted';
+        document.getElementById('green').style.backgroundColor='#5ced73';
+        document.getElementById('green').innerHTML='Active';
+    }
+    function collaborate(){
+        document.getElementById('b').innerHTML='Collaborated';
+    }
+    function reject(){
+        document.getElementById('c').innerHTML='Declined';
+    }
+</script>
+</html>
